@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My First Bitstarter</title>
+  <title>Cheesymount, ho!</title>
 
   <!-- Set up the viewport for responsive design... -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   <!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" /> -->
   <style type="text/css">
     /*Desktop Display*/
-    @media (min-width: 960px) {
+    @media (min-width: 980px) {
       body {
         padding-top: 60px;
       }
@@ -33,7 +33,7 @@
     }
 
     /*Phone or Tablet Display*/
-    @media (min-width: 480px) {
+    @media (max-width: 480px) {
       .copy {
         padding: 2.5% 10%;
       }
@@ -63,6 +63,23 @@
       line-height: 24px;
     }
 
+    /*Video pitch and Action*/
+    .pitch {
+      padding: 2.5% 0%;
+    }
+    .order {
+      padding: 2% 0%;
+    }
+    .actions {
+      background-color: #343434;
+      padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+      text-align: center;
+    }
+    .statistics h3, .statistics p {
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -90,54 +107,75 @@
     </div>
   </div>
 
+  <!-- Primary Content -->
   <div class="container">
-    <div class="row heading">
+    <div class="row-fluid heading">
       <div class="span12">
-        <h1>Bitstarter Title</h1>
+        <h1>Cheesymount</h1>
       </div>
     </div>
-    <div class="row subheading">
+
+    <div class="row-fluid subheading">
       <div class="span12">
-        <p class="lead">This is my first bitstarter project.</p>
+        <p class="lead">You know you want one.</p>
       </div>
     </div>
-    <div class="row pitch">
-      <div class="span6 video">
-        Video
+
+    <!-- Leading Row -->
+    <div class="row-fluid pitch">
+      <div class="span5 offset1 video">
+        <img class="img-polaroid" src="http://placehold.it/480x300" />
       </div>
-      <div class="span6">
-        <div class="thermometer">
-          Thermometer
+      <div class="span5 actions">
+        <div class="span8 offset2">
+          <div class="statistics">
+            <div class="span4">
+              <div class="linediv-l">
+                <h3>1000</h3><p>backers</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="linediv-c">
+                <h3>$6000</h3><p>of $10,000</p>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="linediv-r">
+                <h3>10</h3><p>days left</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="order">
-          Order
+        <div class="span10 offset1">
+          <div class="thermometer progress active">
+            <div class="bar bar-success" style="width: 60%;"></div>
+            <div class="bar bar-warning" style="width: 40%;"></div>
+          </div>
         </div>
-        <div class="social">
-          Social
+        <div class="span6 offset3 order">
+          <button class="btn btn-success btn-large">Preorder</button>
+        </div>
+        <div class="span8 offset2 social">
+          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
         </div>
       </div>
     </div>
-    <div class="row section1">
-      <div class="span12">
-        Marketing Section 1
+
+    <!-- Marketing Content -->
+    <div class="row-fluid section1">
+      <div class="span5 offset1 asset">
+        <img class="img-polaroid" src="http://placehold.it/480x300" />
+      </div>
+      <div class="span5 copy">
+        <p>
+          The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+        </p>
       </div>
     </div>
-    <div class="row section2">
-      <div class="span12">
-        Marketing Section 2
-      </div>
-    </div>
-    <div class="row faq">
-      <div class="span12">
-        FAQ
-      </div>
-    </div>
-    <div class="row footer">
-      <div class="span12">
-        Footer
-      </div>
-    </div>
-  </div>
+  </div> <!-- / Primary Content -->
+
+  <!-- Javascript Embeds -->
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
